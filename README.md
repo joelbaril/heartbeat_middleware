@@ -1,6 +1,6 @@
 # HeartbeatMiddleware
 
-TODO: Write a gem description
+Heartbeat Rack middleware to be used in to get the sha1 of a running Rails and Sinatra app, along with the date of the last commit on the branch.
 
 ## Installation
 
@@ -18,12 +18,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+		This middleware should start automatically when the gem is included in a project.
+		In a Rails app,  you can add /heartbeat to the URL and the Rack endpoint will return the sha1 and updated_at information in a JSON.
+		It is also possible to specify the absolute path to the root of the app, eg: 127.0.0.1:3000/heartbeat?root=/home/user/rail_app/
