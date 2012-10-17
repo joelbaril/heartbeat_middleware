@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = HeartbeatMiddleware::VERSION
   gem.authors       = ["Joel Baril"]
   gem.email         = ["joel.baril@gmail.com"]
-  gem.description   = %q{Heartbeat Rack middleware to be used in to get the sha1 of a running Rails and Sinatra app, along with the date of the last commit on the branch.}
+  gem.description   = %q{A middleware that reads the git rev-parse HEAD SHA1 signature and outputs it as json with a timestamp.}
   gem.summary       = %q{Heartbeat Rack middleware for Rails and Sinatra apps}
   gem.homepage      = ""
 
