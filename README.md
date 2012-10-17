@@ -1,6 +1,6 @@
 # HeartbeatMiddleware
 
-A middleware that reads the git rev-parse HEAD SHA1 signature and outputs it as json with a timestamp.
+A Rack middleware that reads the git rev-parse HEAD SHA1 signature and outputs it as json with a timestamp.
 
 ## Installation
 
