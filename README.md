@@ -14,6 +14,5 @@ And then execute:
 
 ## Usage
 
-		This middleware should start automatically when the gem is included in a project.
-		In a Rails app,  you can add /heartbeat to the URL and the Rack endpoint will return the sha1 and updated_at information in a JSON.
-		It is also possible to specify the absolute path to the root of the app, eg: 127.0.0.1:3000/heartbeat?root=/rail_app/
+		This middleware should start automatically when the gem is included in a project for Rails apps. For other apps, the root path of the project has to be specified when initializing HeartbeatMiddleware
+		You can add /heartbeat to the URL and the Rack endpoint will return the sha1 and updated_at information in a JSON.
